@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+    <div class=panel-heading>
+        <h3 class="panel-title">
+                    Data - {{ convertToDate({dt: weatherDays.dt}) | date: dateFormat }}
+                    </h3>
+    </div>
+    <div class="panel-body">
+        Temperatura de dia (F): {{ convertToStandard1({dayTimeTemp: weatherDays.temp.day}) }}ºF<br /> 
+        Temperatura de dia (C): {{ convertToStandard2({dayTimeTemp: weatherDays.temp.day}) }}ºC
+    </div>
+</div>
